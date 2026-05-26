@@ -1,0 +1,121 @@
+<html><!-- Banner Superior Decorativo -->
+    <meta charset="utf-8">
+    <title>sobre nos</title>
+    <link rel="stylesheet" href="../css/stylo.css">
+     <link rel="icon" type="image/x-icon" href="../img/gh.png"> 
+
+    <header> 
+        <script type="text/javascript">
+
+alert ("qualquer problema entrar em \ncontato");
+
+    // Função para abrir e fechar a barra lateral
+function     abriremenu() {
+    var sidebar = document.getElementById("menuside");
+    sidebar.classList.toggle("mostrar");
+}
+
+// Função pop up existente
+function abrirdetalhes(){
+    window.open("../telas/pop_contatos.html", "popup", "width-800,height-700");
+}
+
+
+</script>
+<button class="btn-sidebar" onclick="abriremenu()">
+    <span class="iconeside">☰</span> Mais 
+</button>
+            <div class="btn   barradeinteracao" target="_blank">
+         <a class="btn" href="../index.html">Home</a>
+         <a class="btn" href="../telas/produtos.html">Produtos</a>
+         <a class="btn" href="../telas/carrinho.html">Carrinho</a>
+    
+          <li  onclick="abrirdetalhes()" style=cursor:pointer class="btn" > contatos</li>
+    </div>
+
+    <div id="menuside" class="conteudoside">
+    <!-- Botão interno para fechar o menu -->
+    <button class="btn-fechar" onclick="abriremenu()">&times;</button>
+    
+    <h3>Menu GH Store</h3>
+    <a href="../index.html">Home</a>
+    <a href="../telas/produtos.html">Produtos</a>
+    <a href="../telas/carrinho.html">Carrinho</a>
+    <a href="#" onclick="abrirdetalhes()">Contatos</a>
+    <A href="../telas/sobre.html">Sobre nós</A>
+</div>
+
+</header>
+<section class="banner-sobre">
+    <h1>Sobre Nós</h1>
+    <p>Conheça a história por trás da GH STORE01</p>
+   
+</section>
+
+
+<!-- Bloco de conteúdo da história e Valores -->
+<main class="container-sobre">
+    <section class="historia-secao">
+        <h2>Nossa História</h2>
+        <p>
+            A GH STORE01 nasceu com o objetivo de trazer o melhor do estilo urbano e as maiores tendências de moda para 2026. Focada em qualidade e autenticidade, nossa loja busca oferecer não apenas roupas, mas sim uma forma de expressão através de camisetas premium, calças exclusivas e os melhores acessórios do mercado.
+        </p>
+    </section>
+
+    <!-- Grid com Missão, Visão e Valores -->
+    <section class="valores-grid">
+        <div class="valor-card">
+            <h3>Missão</h3>
+            <p>Entregar produtos de alta qualidade, elevando a autoestima e o estilo único de cada cliente de forma acessível.</p>
+        </div>
+        <div class="valor-card">
+            <h3>Visão</h3>
+            <p>Se tornar a loja referência em streetwear e moda jovem, expandindo nossa comunidade por todo o país.</p>
+        </div>
+        <div class="valor-card">
+            <h3>Valores</h3>
+            <p>Compromisso com o cliente, autenticidade nas peças, transparência nas vendas e inovação constante.</p>
+        </div>
+    </section>
+    <p>
+
+    </p>
+
+    <section class="mapa">
+        <h3> Nossa localização</h3>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29239.071964926814!2d-46.57893596523437!3d-23.644325099999993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cec46ebe475%3A0x8d2c14858d37a05e!2sEscola%20Senai%20Armando%20de%20Arruda%20Pereira!5e0!3m2!1spt-BR!2sbr!4v1779763866068!5m2!1spt-BR!2sbr"  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+ <ul>
+        <!--data-->
+
+ <p class="stilodate">
+  <script>
+    const data = new Date();
+    const formato = data.toLocaleDateString('pt-BR', { dateStyle: 'long'});
+    document.write(formato);
+  </script>
+</p>
+
+    </section>
+<footer class="footer">
+    <img src="../img/gh.png" class="footerlogo">
+    
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ghstore01_" data-unique-id="ghstore01_" data-embed-type="creator" style="max-width: 580px; min-width: 188px;" > <section> <a target="_blank" href="https://www.tiktok.com/@ghstore01_?refer=creator_embed">@ghstore01_</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js" ></script>
+            <section class="redessc">
+        <h3 class="secoes">redes socias</h3>
+     
+    <a href="https://www.instagram.com/ghstore01__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <img src="../icones_apps/insta.jpg" alt="instagram" class="redes-sociais">
+        
+        
+        <a href="https://tr.ee/hZGyEVqiq7" target="_blank">
+            <img src="../icones_apps/tkt.png" alt="tik tok" class="redes-sociais">
+            
+            
+        </a>
+    </a>
+    
+    </section>
+</footer>
+</main>
+</html>

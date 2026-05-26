@@ -1,0 +1,69 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="../css/stylo.css">
+  <link rel="icon" type="image/x-icon" href="../img/gh.png"> 
+
+  <script type="text/javascript">
+
+    // Função para abrir e fechar a barra lateral
+function     abriremenu() {
+    var sidebar = document.getElementById("menuside");
+    sidebar.classList.toggle("mostrar");
+}
+
+// Função pop up existente
+function abrirdetalhes(){
+    window.open("../telas/pop_contatos.html", "popup", "width-800,height-700");
+}
+
+
+</script>
+</head>
+<body>
+
+<header>
+    <button class="btn-sidebar" onclick="abriremenu()">
+    <span class="iconeside">☰</span> Mais 
+</button>
+ 
+<!-- Barra lateral oculta por padrão -->
+<div id="menuside" class="conteudoside">
+    <!-- Botão interno para fechar o menu -->
+    <button class="btn-fechar" onclick="abriremenu()">&times;</button>
+    
+    <h3>Menu GH Store</h3>
+    <a href="../index.html">Home</a>
+    <a href="../telas/produtos.html">Produtos</a>
+ 
+    <a href="#" onclick="abrirdetalhes()">Contatos</a>
+        <A href="../telas/sobre.html">Sobre nós</A>
+</div>
+  <h1>Carrinho</h1>
+  <a class="BTN" href="../telas/produtos.html">Voltar</a>
+</header>
+
+<p>Seu carrinho está vazio.</p>
+
+<footer class="footer">
+    <img src="../img/gh.png" class="footerlogo">
+            
+</footer>
+
+  <section class="redessc">
+        <h3>redes socias</h3>
+    <a href="https://www.instagram.com/ghstore01__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <img src="../icones_apps/insta.jpg" alt="instagram" class="redes-sociais">
+        
+        
+        <a href="https://tr.ee/hZGyEVqiq7" target="_blank">
+            <img src="../icones_apps/tkt.png" alt="tik tok" class="redes-sociais">
+            
+            
+        </a>
+    </a>
+    </section>
+
+</body>
+</html>

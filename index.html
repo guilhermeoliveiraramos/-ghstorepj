@@ -1,0 +1,146 @@
+    <html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <title>GH STORE01</title>
+    <link rel="stylesheet" href="css/stylo.css">  
+     <link rel="icon" type="image/x-icon" href="img/gh.png"> 
+
+<script type="text/javascript">
+
+    // Função para abrir e fechar a barra lateral
+function     abriremenu() {
+    var sidebar = document.getElementById("menuside");
+    sidebar.classList.toggle("mostrar");
+}
+
+// Função pop up existente
+function abrirdetalhes(){
+    window.open("telas/pop_contatos.html", "popup", "width-800,height-700");
+}
+
+
+</script>
+</head>
+<body>
+
+<header>
+<!--side botao-->
+ <button class="btn-sidebar" onclick="abriremenu()">
+    <span class="iconeside">☰</span> Mais 
+</button>
+ 
+<!-- Barra lateral oculta por padrão -->
+<div id="menuside" class="conteudoside">
+    <!-- Botão interno para fechar o menu -->
+    <button class="btn-fechar" onclick="abriremenu()">&times;</button>
+    
+    <h3>Menu GH Store</h3>
+    <a href="index.html">Home</a>
+    <a href="telas/produtos.html">Produtos</a>
+    <a href="telas/carrinho.html">Carrinho</a>
+    <a href="#" onclick="abrirdetalhes()">Contatos</a>
+    <A href="telas/sobre.html">Sobre nós</A>
+</div>
+   
+<!--exibicao de barra de navegacao-->
+     <nav class="btn   barradeinteracao" target="_blank">
+         <a class="btn" href="index.html">Home</a>
+         <a class="btn" href="telas/produtos.html">Produtos</a>
+         <a class="btn" href="telas/carrinho.html">Carrinho</a>
+    
+         <li  onclick="abrirdetalhes()" style=cursor:pointer class="btn" > contatos</li>
+     </nav>
+</header>
+
+
+
+    <section class="banner">
+<div>
+   
+</div>
+
+
+    
+</section>
+
+<div>
+<section class="cabecalho">
+  <img src="img/banner.png" class="boneco">
+  <p>
+    
+  </p>
+   <a href="telas/produtos.html" class="btn">Ver Produtos</a>
+</section>
+</div>
+
+
+    
+<section class="categorias">
+    <h2 >categorias</h2>
+    
+   
+        
+    </div>
+<div class="texto">
+      
+       
+    </div>
+    <div class="grid-categorias">
+        <a href="telas/produtos.html" class="categoria">
+            <img src="roupas/CAMISAZ.jpg.jpeg">
+            <p>Camisetas</p>
+        </a>
+
+        <a href="telas/produtos.html" class="categoria">
+            <img src="roupas/calca.jpg">
+            <p>Calças</p>
+        </a>
+
+        <a href="telas/produtos.html"class="categoria">
+            <img src="roupas/bone[.jpg">
+            <p>acessorios</p>
+        </a>
+    </div>
+</section>
+
+<section class="destaques">
+    <h2 class="secoes">destaques 🔥🔥</h2>
+
+    <div class="grid">
+        <div class="card">
+            <img src="roupas/conjamiami.jpg.jpeg">
+            <h3>conjunto lacoste</h3>
+            <p>R$ 245,00</p>
+            <a href="telas/carrinho.html" class="btn">adicionar ao carrinho    🛒</a> 
+        </div>
+    </div>
+</section>
+
+   <main>
+          <a href="https://wa.me/5511915023891?text=Olá,%20quero%20comprar" target="_blank">
+                <img src="icones_apps/whatsapp.png" alt="whatsapp" class="whatsapp">
+              </a>
+
+<footer class="footer">
+    <img src="img/gh.png" class="footerlogo">
+    
+    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@ghstore01_" data-unique-id="ghstore01_" data-embed-type="creator" style="max-width: 580px; min-width: 188px;" > <section> <a target="_blank" href="https://www.tiktok.com/@ghstore01_?refer=creator_embed">@ghstore01_</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js" ></script>
+            <section class="redessc">
+        <h3 class="secoes">redes socias</h3>
+     
+    <a href="https://www.instagram.com/ghstore01__?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <img src="icones_apps/insta.jpg" alt="instagram" class="redes-sociais">
+        
+        
+        <a href="https://tr.ee/hZGyEVqiq7" target="_blank">
+            <img src="icones_apps/tkt.png" alt="tik tok" class="redes-sociais">
+            
+            
+        </a>
+    </a>
+    
+    </section>
+</footer>
+    
+</body>
+</html>

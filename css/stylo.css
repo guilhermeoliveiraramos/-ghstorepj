@@ -1,0 +1,539 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: rgb(0, 0, 0);
+  color: white;
+  position: relative;
+} 
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.barraDeBusca{
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.barra{
+  width: 300px;
+  padding: 8px 40px 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.butaoBusca{
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: black;
+  border: none;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: auto;
+  min-height: 100px;
+  background: rgb(0, 0, 0);
+  color: white;
+  padding: 20px;
+}
+
+.cabecalho{
+  position: relative;
+  text-align: center;
+  padding: 40px 20px;
+  color: #000;
+}
+
+.boneco {
+  height: 420px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.texto {
+  z-index: 2;
+}
+
+
+.btn {
+  background: linear-gradient(45deg, #000, #333);
+  color: rgb(255, 255, 255);
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+button {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  overflow: auto;
+}
+
+.mais-vendidos{
+    text-align: center; 
+    margin-top: 40px;
+}
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.categoria {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.categoria img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+    
+
+@media (max-width: 768px) {
+  .grid, .grid-categorias {
+    grid-template-columns: 1fr;
+  }
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .barra {
+    width: 100%;
+  }
+}
+
+footer{
+    background: url("../rodape.png");
+    padding: 40px 20px;
+    background-size: cover;
+    background-position: center;
+    background-color: #333;
+}
+.footerlogo{
+    width: 150px;
+}
+.whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  z-index: 999;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.whatsapp:hover{
+  transform: scale(1.1);
+}
+.redes-sociais{
+    width: 60px;
+}
+.redessc{
+    text-align: center;
+}
+
+.tkt {
+  width: 300px;
+  height: 200px;
+  background: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+ 
+}
+
+.tkt:hover {
+  opacity: 0.7;
+  transform: scale(0.98);
+  transition-delay: 3s;
+}
+
+.tk:not(:hover)
+{
+  transition-delay: 0s;
+}
+
+.secoes{
+position: center;
+}
+.secoes:hover
+{
+  transform: translateY(-3px);
+  
+  box-shadow: 0 10px 20px rgb(255, 255, 255);
+}
+.barradeinteracao{
+  display: flex;
+  gap: 15px;
+}
+
+.stilodate{
+  text-align: center;
+  font-size: 20px;
+  margin-top: 25px;
+  color: rgb(0, 0, 0) ;
+}
+
+.txt_pop-up{
+  margin-left: 45%;
+}
+
+.EMAIL_POP{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.EMAIL_POP img{
+  width: 100%;
+  height: auto;
+
+}
+
+.EMAIL_TXT{
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 20px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.texto-categoria{
+  font-size: larger;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+
+.sidebar {
+  background-color: #000000; 
+  border: none;             
+  border-radius: 8px;       
+  padding: 8px 16px;        
+  font-family: Arial, sans-serif;  
+  font-size: 14px;
+  color: #ffffff;          
+  cursor: pointer;         
+  display: inline-flex;     
+  align-items: center;
+  gap: 8px;                 
+  position: relative;
+}
+
+
+.iconeside {
+  font-size: 18px;
+}
+
+
+.conteudoside {
+  display: none;        
+  position: absolute;   
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  min-width: 180px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.15);
+  border-radius: 6px;
+  margin-top: 5px;
+  padding: 5px 0;
+  z-index: 100;
+}
+
+
+.conteudoside a {
+  color: #333333;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+  text-align: left;
+}
+
+
+.conteudoside a:hover {
+  background-color: #f5f5f5;
+}
+
+
+.mostrar {
+  display: block !important;
+}
+
+.banner-sobre {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/banner.png');
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+
+.banner-sobre h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+.banner-sobre p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+.container-sobre {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.historia-secao {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.historia-secao h2 {
+  font-size: 2.2rem;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.historia-secao h2::after {
+  content: '';
+  width: 60px;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.historia-secao p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+}
+
+.valores-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.valor-card {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.valor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  border-color: #000;
+}
+
+.valor-card h3 {
+  font-size: 1.5rem;
+  margin-top: 0;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.valor-card p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .valores-grid {
+    grid-template-columns: 1fr;
+  }
+  .banner-sobre h1 {
+    font-size: 2.2rem;
+  }
+}
+
+
+.contatos-titulo{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(78, 8, 116);
+    font-family: cursive;
+    list-style: none;
+}
+
+.contatos-item:before{
+    content: "📞";
+}
+
+.texto-contatos{
+    padding-left: 5%;
+}
+
+/*Formulário*/
+form{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+fieldset{
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 85%;
+}
+
+.chk{
+    margin: 20px 0;
+}
+
+#enviar{
+    width: 48%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#enviar:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+/*Div do retorno do formulário*/
+.divRetorno{
+    display: none;
+    margin-bottom: 15px;
+}
+
+.divRetorno p{
+    font-size: 24px;
+}
+
+.mapa{
+
+ background-color: #ffffff;
+  border: 1px solid #5f5c5c;
+  padding: 30px 20px;
+  border-radius: 140px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+.video{
+
+
+  border: 2px solid #000000;
+  padding: 30px 20px;
+  border-radius: 120px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
