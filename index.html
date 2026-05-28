@@ -17,6 +17,11 @@ function     abriremenu() {
 function abrirdetalhes(){
     window.open("telas/pop_contatos.html", "popup", "width-800,height-700");
 }
+function abrirlogin(){
+    window.open("telas/login.html", "popup", "width-40,height-60,position-center");
+}
+
+
 
 
 </script>
@@ -26,7 +31,11 @@ function abrirdetalhes(){
 <header>
 <!--side botao-->
  <button class="btn-sidebar" onclick="abriremenu()">
-    <span class="iconeside">☰</span> Mais 
+    <span class="iconeside-">☰</span> Mais 
+</button>
+
+<button class="btnlogin" onclick="abrirlogin()">
+    <span class="login">👤</span>LOGIN
 </button>
  
 <!-- Barra lateral oculta por padrão -->
@@ -88,7 +97,7 @@ function abrirdetalhes(){
     <div class="grid-categorias">
         <a href="telas/produtos.html" class="categoria">
             <img src="roupas/CAMISAZ.jpg.jpeg">
-            <p>Camisetas</p>
+           <p>Camisetas</p>   
         </a>
 
         <a href="telas/produtos.html" class="categoria">

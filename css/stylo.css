@@ -82,7 +82,7 @@ nav a {
 
 
 .btn {
-  background: linear-gradient(45deg, #000, #333);
+ background: linear-gradient(45deg, #000, #333);
   color: rgb(255, 255, 255);
   padding: 14px 30px;
   border-radius: 10px;
@@ -285,7 +285,8 @@ position: center;
   display: inline-flex;     
   align-items: center;
   gap: 8px;                 
-  position: relative;
+  position: fixed;
+  
 }
 
 
@@ -537,3 +538,23 @@ fieldset{
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: 0.3s;
 }
+.btnlogin{
+
+background: linear-gradient(15deg, #433f3f, #e9e3e3);
+  color: rgb(255, 255, 255);
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.6s;
+  transform: translateX(10%);
+}
+
+.btnlogin:hover{
+  transform: translateY(5%);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
